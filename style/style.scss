@@ -1,102 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+@font-face {src: url(fonts/cocogoose/CocogoosePro-trial.ttf);font-family: cocogoose-pro;};
+@font-face {src: url(fonts/cocogoose/CocogooseProLight-trial.ttf);font-family: cocogoose-pro-light;};
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-body {
-  font-family: 'Poppins', sans-serif;
-  padding: 0;
-  margin: 0;
+:root {
+  --black: #272a31;
+  --red: #ec5242;
+  --gray: #d3d3d3;
 }
 
 h1 {
-  margin: 0;
-  padding: 0;
+  font-family: cocogoose-pro, sans-serif;
+  color: var(--red);
+  font-size: 50px;
+}
+
+h2 {
+  font-family: cocogoose-pro-light, sans-serif;
+  color: var(--black);
+  font-size: 24px;
 }
 
 p {
-  margin: 0;
-  padding: 0;
-}
-
-/* -------------------------- HEADER ----------------------------- */
-header {
-  display: flex;
-  flex-direction: column;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.toolbar {
-  cursor: pointer;
-  position: absolute;
-  font-size: 22px;
-  width: 20px;
-  height: 20px;
-  right: 16px;
-  top: 19px;
-}
-
-.logo {
-  position: absolute;
-  width: 111px;
-  height: 74px;
-  left: 0;
-  top: 0;
-}
-
-/* -------------------------- HEADERLINE ----------------------------- */
-.headline {
-  display: flex;
-  flex-direction: column;
-  margin: 104px 16px 30px 16px;
-}
-
-.headline h1 {
-  font-family: 'Playfair Display', sans-serif;
-  font-style: normal;
-  color: #1a2236;
-  width: 200px;
-  font-weight: 500;
-  font-size: 70px;
-  line-height: 100%;
-}
-
-.headline p {
-  color: #1a2236;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: -0.01em;
-  padding: 20px 0 40px 0;
-}
-
-.header-button {
-  align-self: stretch;
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  color: #fff;
-  background: #1a2236;
-  height: 50px;
-  padding: 5px 42px;
-}
-
-.header-button:hover {
-  background: #fff;
-  color: #1a2236;
-  border: 1px solid #1a2236;
-  box-sizing: border-box;
-}
-
-.header-button:active {
-  background: #fff;
-  color: #1a2236;
-  border: 2px solid #1a2236;
-  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
 }

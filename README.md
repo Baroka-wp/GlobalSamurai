@@ -1,15 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio
+# SAMURA SCHOOL
 
-> The goal here is to buil my Portfolio
+> This website presents the activities of the SAMURAI engineering school. The website briefly presents the activities of the company, its actors and its objectives.
 
 ## Built With
 
 - Html
 - Css
+- Js
 - Linter
-- Figma (Template 5)
+- Figma
 
 ## Authors
 
