@@ -19,7 +19,7 @@ a {
   &:hover {
     color: $primary-red;
   }
-  &:active {
+  &:focus {
     color: $primary-red;
   }
 }
