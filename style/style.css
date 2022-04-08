@@ -3,7 +3,7 @@
   src: url(../fonts/cocogoose/CocogoosePro-trial.ttf);
   font-family: cocogoose-pro; }
 @font-face {
-  src: url(../fonts/cocogoose/CocogooseProLight-trial.ttf);
+  src: url(../fonts/cocogoose/CocogooseProItalic-trial.ttf);
   font-family: cocogoose-pro-light; }
 @font-face {
   src: url(../fonts/cocogoose/CocogoosePrThin-trial.ttf);
@@ -23,6 +23,10 @@ ul {
 a {
   text-decoration: none;
   color: #272a31; }
+  a:hover {
+    color: #ec5242; }
+  a:active {
+    color: #ec5242; }
 
 header .top-nav ul {
   display: flex;
@@ -83,7 +87,7 @@ section.headline {
     height: 90vh; }
   section.headline .hero {
     position: absolute;
-    left: 70px; }
+    left: 10%; }
     section.headline .hero p:nth-child(1) {
       font-family: cocogoose-utra-light;
       font-weight: 100;
@@ -289,8 +293,39 @@ footer {
       footer .footer-content .copyrigth p {
         font-size: 14px; }
 
+.about {
+  position: relative; }
+  .about .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    transform: translate(25%, 8%) !important; }
+    .about .hero h1 {
+      position: relative; }
+    .about .hero h1::after {
+      position: absolute;
+      left: 45%;
+      bottom: -20px;
+      content: "";
+      height: 1px;
+      width: 40px;
+      background-color: #ec5242;
+      text-align: center; }
+  .about .hero-info {
+    background-color: white;
+    width: 70%;
+    border: 3px solid #d3d3d3;
+    padding: 10px; }
+    .about .hero-info p {
+      font-family: "Lato", sans-serif !important;
+      color: #272a31 !important;
+      font-size: 14px !important; }
+
 section.creative-commons {
-  height: 70vh;
+  height: 55vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -303,7 +338,8 @@ section.creative-commons {
     justify-content: space-around;
     width: 60%;
     height: 100%;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 20px; }
     section.creative-commons .creative-commons-container h3 {
       text-align: center;
       color: #272a31;
@@ -324,7 +360,7 @@ section.creative-commons {
       width: 350px; }
 
 section.see-the-past {
-  height: 70vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -358,7 +394,8 @@ section.see-the-past {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px; }
+    gap: 20px;
+    height: 60%; }
     section.see-the-past .past-summit-img .summit1 {
       display: flex;
       flex-direction: column;
@@ -368,8 +405,7 @@ section.see-the-past {
       background: url("../images/african-585272_640.jpg");
       background-position: center;
       background-size: cover;
-      background-repeat: no-repeat;
-      padding: 0 40px; }
+      background-repeat: no-repeat; }
     section.see-the-past .past-summit-img .summit2 {
       display: flex;
       flex-direction: column;
@@ -379,18 +415,26 @@ section.see-the-past {
       background: url("../images/smiling-4654739_640.jpg");
       background-position: center;
       background-size: cover;
-      background-repeat: no-repeat;
-      padding: 0 40px; }
-    section.see-the-past .past-summit-img .last-summit h2 {
-      font-family: cocogoose-utra-light;
-      font-weight: 700;
-      font-size: 40px;
-      color: #d3d3d3;
-      padding-bottom: 20px; }
-    section.see-the-past .past-summit-img .last-summit p {
-      font-family: cocogoose-utra-light;
-      font-weight: 600;
-      font-size: 14px;
-      color: #d3d3d3; }
+      background-repeat: no-repeat; }
+    section.see-the-past .past-summit-img .last-summit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #ec52428f;
+      width: 100%;
+      height: 100%;
+      margin: 0 10px; }
+      section.see-the-past .past-summit-img .last-summit h2 {
+        font-family: cocogoose-pro-light, sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color: #d3d3d3;
+        padding-bottom: 20px; }
+      section.see-the-past .past-summit-img .last-summit p {
+        font-family: cocogoose-utra-light;
+        font-weight: 600;
+        font-size: 14px;
+        color: #d3d3d3; }
 
 /*# sourceMappingURL=style.css.map */
