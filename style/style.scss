@@ -1,26 +1,114 @@
-@font-face {src: url(fonts/cocogoose/CocogoosePro-trial.ttf);font-family: cocogoose-pro;};
-@font-face {src: url(fonts/cocogoose/CocogooseProLight-trial.ttf);font-family: cocogoose-pro-light;};
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import 'variables';
+@import 'normalize';
 
-:root {
-  --black: #272a31;
-  --red: #ec5242;
-  --gray: #d3d3d3;
+header {
+  .top-nav {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      background: $primary-black;
+      padding: 10px 20px;
+    }
+    a {
+      color: $primary-gray;
+      padding: 0 10px;
+    }
+  }
+  .nav-bar {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    height: 45px;
+    box-shadow: 0px 1px 10px 0px $primary-black;
+    .logo-text {
+      p {
+        font-family: $cocognose-pro;
+        font-weight: 700;
+        font-size: 30px;
+      }
+      em {
+        font-family: $cocognose-pro;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 3px;
+        background: -webkit-linear-gradient($primary-red, $primary-black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    ul.nav-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        padding: 0 15px;
+      }
+      .call-action {
+        padding: 10px;
+        border: 4px solid $primary-red;
+      }
+    }
+  }
 }
 
-h1 {
-  font-family: cocogoose-pro, sans-serif;
-  color: var(--red);
-  font-size: 50px;
-}
+section.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .bg-img {
+    position: relative;
+    background: url("../images/cool-background.png");
+    opacity: 20%;
+    background-color: $primary-red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+  }
+  .hero{
+    position: absolute;
+    left: 70px;
+    p:nth-child(1) {
+      font-family: $cocognose-ultra-light;
+      font-weight: 100;
+      color: $primary-red;
+      font-size: 30px;
+    }
+    h1 {
+      background-color: #CA4246;
+      background-image: linear-gradient(
+         45deg,
+         #CA4246 16.666%,
+         #E16541 16.666%,
+         #E16541 33.333%,
+         #F18F43 33.333%,
+         #F18F43 50%,
+         #E16541 16.666%,
+         #CA4246 16.666%,);
+       background-size: 100%;
+       background-repeat: repeat;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+      font-family: $cocognose-pro;
+      font-weight: 700;
+      color: $primary-red;
+      font-size: 50px;
+    }
+    p.hero-info {
+      width: 70%;
+      border: 3px solid white;
+      padding: 10px;
+    }
+    h3 {
+      margin-top: 14px;
+      font-weight: 700;
+      font-size: 25px;
+    }
+    p:nth-child(3) {
+      font-weight: 500;
+    }
+  }
 
-h2 {
-  font-family: cocogoose-pro-light, sans-serif;
-  color: var(--black);
-  font-size: 24px;
-}
-
-p {
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
 }
