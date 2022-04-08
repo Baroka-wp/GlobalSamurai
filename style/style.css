@@ -289,4 +289,108 @@ footer {
       footer .footer-content .copyrigth p {
         font-size: 14px; }
 
+section.creative-commons {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #d3d3d3; }
+  section.creative-commons .creative-commons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+    text-align: center; }
+    section.creative-commons .creative-commons-container h3 {
+      text-align: center;
+      color: #272a31;
+      position: relative;
+      padding-top: 30px; }
+    section.creative-commons .creative-commons-container h3::after {
+      position: absolute;
+      left: 45%;
+      bottom: -20px;
+      content: "";
+      height: 1px;
+      width: 40px;
+      background-color: #ec5242;
+      text-align: center; }
+    section.creative-commons .creative-commons-container img {
+      padding: 5px;
+      border: 3px solid #d3d3d3;
+      width: 350px; }
+
+section.see-the-past {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #d3d3d3; }
+  section.see-the-past .see-the-past-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 80%;
+    height: 100%; }
+  section.see-the-past h3 {
+    text-align: center;
+    color: #272a31;
+    position: relative;
+    padding-top: 30px; }
+  section.see-the-past h3::after {
+    position: absolute;
+    left: 45%;
+    bottom: -20px;
+    content: "";
+    height: 1px;
+    width: 40px;
+    background-color: #ec5242;
+    text-align: center; }
+  section.see-the-past p {
+    text-align: center; }
+  section.see-the-past .past-summit-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; }
+    section.see-the-past .past-summit-img .summit1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      background: url("../images/african-585272_640.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 0 40px; }
+    section.see-the-past .past-summit-img .summit2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      background: url("../images/smiling-4654739_640.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 0 40px; }
+    section.see-the-past .past-summit-img .last-summit h2 {
+      font-family: cocogoose-utra-light;
+      font-weight: 700;
+      font-size: 40px;
+      color: #d3d3d3;
+      padding-bottom: 20px; }
+    section.see-the-past .past-summit-img .last-summit p {
+      font-family: cocogoose-utra-light;
+      font-weight: 600;
+      font-size: 14px;
+      color: #d3d3d3; }
+
 /*# sourceMappingURL=style.css.map */

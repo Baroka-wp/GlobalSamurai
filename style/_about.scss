@@ -1,0 +1,121 @@
+section.creative-commons {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid $primary-gray;
+  .creative-commons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    h3 {
+      text-align: center;
+      color: $primary-black;
+      position: relative;
+      padding-top: 30px;
+    }
+    h3::after {
+      position: absolute;
+      left: 45%;
+      bottom: -20px;
+      content: "";
+      height: 1px;
+      width: 40px;
+      background-color: $primary-red;
+      text-align: center;
+    }
+    img {
+      padding: 5px;
+      border: 3px solid $primary-gray;
+      width: 350px;
+    }
+  }
+
+}
+
+section.see-the-past {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid $primary-gray;
+  .see-the-past-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+  }
+  h3 {
+    text-align: center;
+    color: $primary-black;
+    position: relative;
+    padding-top: 30px;
+  }
+  h3::after {
+    position: absolute;
+    left: 45%;
+    bottom: -20px;
+    content: "";
+    height: 1px;
+    width: 40px;
+    background-color: $primary-red;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .past-summit-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .summit1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      background: url('../images/african-585272_640.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 0 40px;
+    }
+    .summit2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      background: url('../images/smiling-4654739_640.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 0 40px;
+    }
+    .last-summit {
+      h2 {
+        font-family: $cocognose-ultra-light;
+        font-weight: 700;
+        font-size: 40px;
+        color: $primary-gray;
+        padding-bottom: 20px;
+      }
+      p {
+        font-family: $cocognose-ultra-light;
+        font-weight: 600;
+        font-size: 14px;
+        color: $primary-gray;
+      }
+    }
+  }
+}
