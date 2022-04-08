@@ -1,13 +1,13 @@
 .about {
-  position: relative;
   .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
     gap: 30px;
-    transform: translate(25%, 8%)!important;
+    transform: translate(-8%, -12%) !important;
     h1 {
       position: relative;
     }
@@ -21,10 +21,15 @@
       background-color: $primary-red;
       text-align: center;
     }
+    a {
+      font-family: $cocognose-light;
+      text-decoration: underline;
+      color: $primary-red;
+    }
   }
   .hero-info {
     background-color: white;
-    width: 70%;
+    width: 50%;
     border: 3px solid $primary-gray;
     padding: 10px;
     p {
