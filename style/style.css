@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, p, ul, a {
+h1, h2, h3, h4, p, ul, a {
   margin: 0;
   padding: 0; }
 
@@ -85,7 +85,7 @@ section.headline {
       font-size: 30px; }
     section.headline .hero h1 {
       background-color: #CA4246;
-      background-image: linear-gradient(45deg, #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 33.333%, #F18F43 50%, #E16541 16.666%, #CA4246 16.666%);
+      background-image: linear-gradient(45deg, #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 16.666%, #E16541 16.666%, #F18F43 50%, #E16541 16.666%, #CA4246 16.666%);
       background-size: 100%;
       background-repeat: repeat;
       -webkit-background-clip: text;
@@ -95,7 +95,7 @@ section.headline {
       color: #ec5242;
       font-size: 50px; }
     section.headline .hero p.hero-info {
-      width: 70%;
+      width: 50%;
       border: 3px solid white;
       padding: 10px; }
     section.headline .hero h3 {
@@ -104,5 +104,119 @@ section.headline {
       font-size: 25px; }
     section.headline .hero p:nth-child(3) {
       font-weight: 500; }
+
+section.program {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+  background: #272a31;
+  color: white;
+  z-index: -1;
+  gap: 10px; }
+  section.program h3 {
+    position: relative;
+    padding-top: 30px; }
+  section.program h3::after {
+    position: absolute;
+    left: 30%;
+    bottom: -20px;
+    content: "";
+    height: 1px;
+    width: 40px;
+    background-color: #ec5242;
+    text-align: center; }
+  section.program .cards {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 80%; }
+    section.program .cards .card {
+      background-color: #d3d3d336;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      padding: 10px;
+      width: 140px;
+      height: 175px; }
+      section.program .cards .card img {
+        width: 40px; }
+      section.program .cards .card p:nth-child(2) {
+        color: #ec5242;
+        font-family: cocogoose-pro, sans-serif;
+        font-weight: 400;
+        font-size: 14px; }
+      section.program .cards .card p:nth-child(3) {
+        font-size: 12px; }
+  section.program a {
+    text-decoration: underline;
+    color: #d3d3d3;
+    font-family: cocogoose-pro, sans-serif;
+    font-size: 14px;
+    padding: 16px; }
+
+section.speakers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; }
+  section.speakers h3 {
+    color: #272a31;
+    position: relative;
+    padding-top: 30px; }
+  section.speakers h3::after {
+    position: absolute;
+    left: 30%;
+    bottom: -20px;
+    content: "";
+    height: 1px;
+    width: 40px;
+    background-color: #ec5242;
+    text-align: center; }
+  section.speakers .speakers-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 70%;
+    gap: 20px; }
+    section.speakers .speakers-col .speakers-col-1,
+    section.speakers .speakers-col .speakers-col-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
+  section.speakers .speaker {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    section.speakers .speaker .speaker-img-block {
+      width: 30%; }
+    section.speakers .speaker .speaker-img {
+      width: 70%;
+      min-width: 60px; }
+    section.speakers .speaker .speaker-details {
+      padding: 10px; }
+    section.speakers .speaker .speaker-details h4 {
+      font-family: cocogoose-pro, sans-serif;
+      font-weight: 600;
+      font-size: 14px; }
+    section.speakers .speaker .speaker-details em {
+      font-size: 12px;
+      color: #ec5242; }
+    section.speakers .speaker .speaker-details .speaker-separation {
+      width: 40px;
+      height: 0.8px;
+      background-color: #ec5242;
+      margin: 7px 0; }
+    section.speakers .speaker .speaker-details p {
+      font-size: 12px;
+      font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */

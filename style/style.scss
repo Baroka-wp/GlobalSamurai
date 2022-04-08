@@ -83,7 +83,8 @@ section.headline {
          #CA4246 16.666%,
          #E16541 16.666%,
          #E16541 33.333%,
-         #F18F43 33.333%,
+         #F18F43 16.666%,
+         #E16541 16.666%,
          #F18F43 50%,
          #E16541 16.666%,
          #CA4246 16.666%,);
@@ -97,7 +98,7 @@ section.headline {
       font-size: 50px;
     }
     p.hero-info {
-      width: 70%;
+      width: 50%;
       border: 3px solid white;
       padding: 10px;
     }
@@ -110,5 +111,143 @@ section.headline {
       font-weight: 500;
     }
   }
+}
 
+section.program {
+  //position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+  background: $primary-black;
+  color: white;
+  z-index: -1;
+  gap: 10px;
+  h3 {
+    position: relative;
+    padding-top: 30px;
+  }
+  h3::after {
+    position: absolute;
+    left: 30%;
+    bottom: -20px;
+    content: "";
+    height: 1px;
+    width: 40px;
+    background-color: $primary-red;
+    text-align: center;
+  }
+  .cards {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 80%;
+    .card {
+      background-color: #d3d3d336;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+      padding: 10px;
+      width: 140px;
+      height: 175px;
+      img {
+        width: 40px;
+      }
+      p:nth-child(2) {
+        color: $primary-red;
+        font-family: $cocognose-pro;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      p:nth-child(3) {
+        font-size: 12px;
+      }
+    }
+  }
+  a {
+    text-decoration: underline;
+    color: $primary-gray;
+    font-family: $cocognose-pro;
+    font-size: 14px;
+    padding: 16px;
+  }
+}
+
+section.speakers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  h3 {
+    color: $primary-black;
+    position: relative;
+    padding-top: 30px;
+  }
+  h3::after {
+    position: absolute;
+    left: 30%;
+    bottom: -20px;
+    content: "";
+    height: 1px;
+    width: 40px;
+    background-color: $primary-red;
+    text-align: center;
+  }
+  .speakers-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 70%;
+    gap:20px;
+    .speakers-col-1,
+    .speakers-col-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .speaker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .speaker-img-block {
+      width: 30%;
+    }
+    .speaker-img {
+      width: 70%;
+      min-width: 60px;
+    }
+    .speaker-details {
+      padding: 10px;
+    }
+    .speaker-details {
+      h4 {
+        font-family: $cocognose-pro;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      em {
+        font-size: 12px;
+        color: $primary-red;
+      }
+      .speaker-separation {
+        width: 40px;
+        height: 0.8px;
+        background-color: $primary-red;
+        margin: 7px 0;
+      }
+      p {
+        font-size: 12px;
+        font-style: italic;
+      }
+    }
+  }
 }
