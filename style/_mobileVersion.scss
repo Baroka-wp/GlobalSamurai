@@ -1,0 +1,124 @@
+@media only screen and (max-width: 768px) {
+  header {
+    position: relative;
+    .top-nav {
+      display: none;
+    }
+    .nav-bar {
+      display: none;
+      background-color: $primary-gray;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      z-index: 1;
+      flex-direction: column;
+      .nav-list {
+        width: 100%;
+        //height: 70vh;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .nav-link {
+          font-size: 30px;
+        }
+      }
+    }
+    .hamburger {
+      display: block;
+      z-index: 100;
+      position: absolute;
+      top: 30px;
+      left: 60px;
+      transform: translate(1%, 1%);
+      cursor: pointer;
+      .bar {
+          display: block;
+          width: 25px;
+          height: 3px;
+          margin: 5px auto;
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          background-color: #1a2236;
+      }
+    }
+    .hamburger.active {
+      .bar:nth-child(2) {
+          opacity: 0;
+      }
+      .bar:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+      }
+      .bar:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+  section.headline {
+    .bg-img {
+      height: 105vh;
+    }
+    .hero {
+       p:nth-child(1){
+         font-size: 22px;
+       }
+       h1 {
+         font-size: 40px;
+       }
+       p.hero-info {
+          width: 70%;
+       }
+    }
+  }
+  section.program {
+    height: 100vh;
+    .cards {
+      flex-direction: column;
+      width: 90%;
+      .card {
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+      }
+    }
+  }
+  section.speakers {
+    gap: 25px;
+    .speakers-col {
+      height: auto;
+      flex-direction: column;
+    }
+  }
+  section.partners {
+    height: 25vh;
+    .partner-logos {
+      width: 90%;
+      overflow: scroll;
+    }
+  }
+  footer {
+    height: 40vh;
+    padding: 30px 10px;
+    .footer-content {
+      width: 100%;
+    }
+  }
+  .about {
+    .hero {
+      left: 40px;
+      h1 {
+        //font-size: 40px !important;
+      }
+    }
+  }
+  section.creative-commons {
+    height: 70vh;
+  }
+
+  section.see-the-past {
+    height: 70vh;
+    .past-summit-img {
+      gap: 5px;
+      flex-direction: column;
+    }
+  }
+}

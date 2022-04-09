@@ -28,6 +28,8 @@ a {
   a:focus {
     color: #ec5242; }
 
+header .hamburger {
+  display: none; }
 header .top-nav ul {
   display: flex;
   justify-content: flex-end;
@@ -86,8 +88,7 @@ section.headline {
     background-size: cover;
     height: 90vh; }
   section.headline .hero {
-    position: absolute;
-    left: 10%; }
+    position: absolute; }
     section.headline .hero p:nth-child(1) {
       font-family: cocogoose-utra-light;
       font-weight: 100;
@@ -445,5 +446,97 @@ section.see-the-past {
         font-weight: 600;
         font-size: 14px;
         color: #d3d3d3; }
+
+@media only screen and (max-width: 768px) {
+  header {
+    position: relative; }
+    header .top-nav {
+      display: none; }
+    header .nav-bar {
+      display: none;
+      background-color: #d3d3d3;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      z-index: 1;
+      flex-direction: column; }
+      header .nav-bar .nav-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px; }
+        header .nav-bar .nav-list .nav-link {
+          font-size: 30px; }
+    header .hamburger {
+      display: block;
+      z-index: 100;
+      position: absolute;
+      top: 30px;
+      left: 60px;
+      transform: translate(1%, 1%);
+      cursor: pointer; }
+      header .hamburger .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        background-color: #1a2236; }
+    header .hamburger.active .bar:nth-child(2) {
+      opacity: 0; }
+    header .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg); }
+    header .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg); }
+
+  section.headline .bg-img {
+    height: 105vh; }
+  section.headline .hero p:nth-child(1) {
+    font-size: 22px; }
+  section.headline .hero h1 {
+    font-size: 40px; }
+  section.headline .hero p.hero-info {
+    width: 70%; }
+
+  section.program {
+    height: 100vh; }
+    section.program .cards {
+      flex-direction: column;
+      width: 90%; }
+      section.program .cards .card {
+        flex-direction: row;
+        width: 100%;
+        height: 60px; }
+
+  section.speakers {
+    gap: 25px; }
+    section.speakers .speakers-col {
+      height: auto;
+      flex-direction: column; }
+
+  section.partners {
+    height: 25vh; }
+    section.partners .partner-logos {
+      width: 90%;
+      overflow: scroll; }
+
+  footer {
+    height: 40vh;
+    padding: 30px 10px; }
+    footer .footer-content {
+      width: 100%; }
+
+  .about .hero {
+    left: 40px; }
+
+  section.creative-commons {
+    height: 70vh; }
+
+  section.see-the-past {
+    height: 70vh; }
+    section.see-the-past .past-summit-img {
+      gap: 5px;
+      flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */
