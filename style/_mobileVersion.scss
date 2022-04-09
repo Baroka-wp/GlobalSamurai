@@ -95,10 +95,16 @@
     }
   }
   section.speakers {
-    gap: 25px;
+    gap: 30px;
     .speakers-col {
       height: auto;
       flex-direction: column;
+    }
+    v-card {
+      width: auto;
+    }
+    .speaker {
+      width: auto;
     }
   }
   section.partners {

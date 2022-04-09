@@ -198,7 +198,7 @@ section.speakers {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 40px;
   h3 {
     color: $primary-black;
     position: relative;
@@ -216,31 +216,30 @@ section.speakers {
   }
   .speakers-col {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    width: 70%;
+    //height: 80vh;
+    width: 90%;
+    margin-bottom: 40px;
     gap:20px;
-    .speakers-col-1,
-    .speakers-col-2 {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+  }
+  v-card {
+    width: 45%;
   }
   .speaker {
     display: flex;
     justify-content: center;
     align-items: center;
-    .speaker-img-block {
-      width: 30%;
+    .speaker-img-block{
+      width: 20%;
     }
     .speaker-img {
       width: 70%;
       min-width: 60px;
     }
     .speaker-details {
-      padding: 10px;
+      padding: 5px;
     }
     .speaker-details {
       h4 {
