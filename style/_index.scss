@@ -1,4 +1,7 @@
 header {
+  .hamburger{
+    display: none;
+  }
   .top-nav {
     ul {
       display: flex;
@@ -73,7 +76,7 @@ section.headline {
   }
   .hero{
     position: absolute;
-    left: 10%;
+    //left: 10%;
     p:nth-child(1) {
       font-family: $cocognose-ultra-light;
       font-weight: 100;
