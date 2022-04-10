@@ -60,6 +60,12 @@ header {
   }
 }
 
+.main.active {
+  position: fixed;
+  width: 100%;
+  filter: blur(10px);
+}
+
 section.headline {
   position: relative;
   display: flex;
@@ -329,6 +335,65 @@ footer {
       p{
         font-size: 14px;
       }
+    }
+  }
+}
+
+.modalWindow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //align-items: center;
+  gap: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  background-color: #d3d3d3b5;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 3px 4px 5px 0px #ec5242;
+  width: 50%;
+  padding: 20px;
+  .modalHero {
+    p:nth-child(1) {
+      font-family: $cocognose-ultra-light;
+      font-weight: 100;
+      color: $primary-red;
+      font-size: 30px;
+    }
+    h1 {
+      background-color: #CA4246;
+      background-image: linear-gradient(
+         45deg,
+         #CA4246 16.666%,
+         #E16541 16.666%,
+         #E16541 33.333%,
+         #F18F43 16.666%,
+         #E16541 16.666%,
+         #F18F43 50%,
+         #E16541 16.666%,
+         #CA4246 16.666%);
+       background-size: 100%;
+       background-repeat: repeat;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+      font-family: $cocognose-pro;
+      font-weight: 700;
+      color: $primary-red;
+      font-size: 20px;
+    }
+    p.modalInfo {
+      border: 3px solid white;
+      padding: 10px;
+    }
+    h3 {
+      margin-top: 14px;
+      font-weight: 700;
+      font-size: 25px;
+    }
+    p:nth-child(3) {
+      font-weight: 500;
     }
   }
 }

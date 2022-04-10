@@ -1,9 +1,4 @@
 @media only screen and (max-width: 768px) {
-  .main.active {
-    position: fixed;
-    width: 100%;
-    filter: blur(10px);
-  }
   header {
     position: relative;
     .top-nav {
@@ -88,6 +83,7 @@
       flex-direction: column;
       width: 90%;
       .card {
+        justify-content: space-between;
         flex-direction: row;
         width: 100%;
         height: 60px;

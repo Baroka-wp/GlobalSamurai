@@ -74,6 +74,11 @@ header .nav-bar {
         background-color: #ec5242;
         transition: .3s; }
 
+.main.active {
+  position: fixed;
+  width: 100%;
+  filter: blur(10px); }
+
 section.headline {
   position: relative;
   display: flex;
@@ -293,6 +298,47 @@ footer {
       footer .footer-content .copyrigth p {
         font-size: 14px; }
 
+.modalWindow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  background-color: #d3d3d3b5;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 3px 4px 5px 0px #ec5242;
+  width: 50%;
+  padding: 20px; }
+  .modalWindow .modalHero p:nth-child(1) {
+    font-family: cocogoose-utra-light;
+    font-weight: 100;
+    color: #ec5242;
+    font-size: 30px; }
+  .modalWindow .modalHero h1 {
+    background-color: #CA4246;
+    background-image: linear-gradient(45deg, #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 16.666%, #E16541 16.666%, #F18F43 50%, #E16541 16.666%, #CA4246 16.666%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: cocogoose-pro, sans-serif;
+    font-weight: 700;
+    color: #ec5242;
+    font-size: 20px; }
+  .modalWindow .modalHero p.modalInfo {
+    border: 3px solid white;
+    padding: 10px; }
+  .modalWindow .modalHero h3 {
+    margin-top: 14px;
+    font-weight: 700;
+    font-size: 25px; }
+  .modalWindow .modalHero p:nth-child(3) {
+    font-weight: 500; }
+
 .about .hero {
   display: flex;
   flex-direction: column;
@@ -318,7 +364,7 @@ footer {
     text-decoration: underline;
     color: #ec5242; }
 .about .hero-info {
-  background-color: white;
+  background-color: #ffffff80;
   width: 50%;
   border: 3px solid #d3d3d3;
   padding: 10px; }
@@ -447,11 +493,6 @@ section.see-the-past {
         color: #d3d3d3; }
 
 @media only screen and (max-width: 768px) {
-  .main.active {
-    position: fixed;
-    width: 100%;
-    filter: blur(10px); }
-
   header {
     position: relative; }
     header .top-nav {
@@ -515,6 +556,7 @@ section.see-the-past {
       flex-direction: column;
       width: 90%; }
       section.program .cards .card {
+        justify-content: space-between;
         flex-direction: row;
         width: 100%;
         height: 60px; }

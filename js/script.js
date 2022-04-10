@@ -1,8 +1,11 @@
+//import components
 import Header from '../js/components/header.js';
 import Footer from '../js/components/footer.js';
 import Vcard from '../js/components/speakerFeature.js';
+//import speakerList
 import speakerList from '../js/model/speakersList.js';
 
+//define custom elements
 customElements.define("v-header", Header);
 customElements.define("v-footer", Footer);
 customElements.define("v-card", Vcard);
@@ -12,8 +15,6 @@ const navbar = document.querySelector('.nav-bar');
 const main = document.querySelector('.main');
 const navLink = document.querySelectorAll('.nav-link');
 const speakersFeature = document.querySelector('.speakers-col')
-
-
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
@@ -29,16 +30,18 @@ navLink.forEach(link => {
   })
 });
 
+// function to add speaker
 const addSpeaker = async (image, name, graduate, experience) =>{
-const img =  await (() => {
-    var img = image;
-    return img
-  })();
   let el = document.createElement("v-card");
   el.speakerName = name;
   el.speakerGraduate = graduate;
   el.speakerExperience = experience;
-  el.speakerImage = img,
+  //get async image
+  el.speakerImage = await (() => {
+    var img = image;
+    return img
+  })();
+  //append speaker list to speakersFeature Div
   speakersFeature.append(el);
 }
 
