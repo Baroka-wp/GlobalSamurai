@@ -1,4 +1,9 @@
 @media only screen and (max-width: 768px) {
+  .main.active {
+    position: fixed;
+    width: 100%;
+    filter: blur(10px);
+  }
   header {
     position: relative;
     .top-nav {
@@ -135,5 +140,9 @@
       gap: 5px;
       flex-direction: column;
     }
+  }
+  .modalWindow.active {
+    width: 70%;
+    transform: translate(-50%, -50%);
   }
 }

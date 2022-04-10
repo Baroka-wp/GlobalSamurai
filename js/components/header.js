@@ -33,7 +33,7 @@ export default class Header extends HTMLElement {
             <li class="nav-link"><a href="#">Join</a></li>
             <li class="nav-link"><a href="#">Sponsor</a></li>
             <li class="nav-link"><a href="#">News</a></li>
-            <li class="nav-link"><a href="#" class="call-action" href="#">CC Compaign</a></li>
+            <li class="nav-link"><a href="#" class="call-action" href="#">Join Us</a></li>
           </ul>
         </nav>
       </header>

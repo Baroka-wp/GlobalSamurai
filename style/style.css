@@ -28,6 +28,11 @@ a {
   a:focus {
     color: #ec5242; }
 
+.main.active {
+  position: fixed;
+  width: 100%;
+  filter: blur(10px); }
+
 header .hamburger {
   display: none; }
 header .top-nav ul {
@@ -73,11 +78,6 @@ header .nav-bar {
         color: white;
         background-color: #ec5242;
         transition: .3s; }
-
-.main.active {
-  position: fixed;
-  width: 100%;
-  filter: blur(10px); }
 
 section.headline {
   position: relative;
@@ -299,6 +299,15 @@ footer {
         font-size: 14px; }
 
 .modalWindow {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s; }
+
+.modalWindow.active {
+  transition: 0.4s;
+  visibility: visible;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -313,12 +322,82 @@ footer {
   box-shadow: 3px 4px 5px 0px #ec5242;
   width: 50%;
   padding: 20px; }
-  .modalWindow .modalHero p:nth-child(1) {
+  .modalWindow.active i {
+    cursor: pointer;
+    align-self: flex-end;
+    color: #ec5242;
+    font-size: 20px; }
+    .modalWindow.active i:hover {
+      color: #272a31; }
+  .modalWindow.active form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .modalWindow.active form .form-input {
+      display: flex;
+      justify-content: stretch;
+      gap: 10px; }
+      .modalWindow.active form .form-input .field {
+        width: 50%; }
+      .modalWindow.active form .form-input input {
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+        height: 52px;
+        margin-bottom: 8px;
+        background: #d3d3d300;
+        border: 1px solid #ec5242;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 8px 16px;
+        width: 100%; }
+        .modalWindow.active form .form-input input:focus {
+          outline: none;
+          border: 1px solid #fff; }
+    .modalWindow.active form .field {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .modalWindow.active form .field label {
+        font-family: cocogoose-utra-light;
+        font-size: 12px;
+        padding: 5px 0; }
+    .modalWindow.active form textarea {
+      font-family: "Lato", sans-serif;
+      font-size: 14px;
+      height: 112px;
+      margin-bottom: 8px;
+      background: #d3d3d300;
+      border: 1px solid #ec5242;
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding: 8px 16px;
+      resize: none;
+      width: 100%; }
+      .modalWindow.active form textarea:focus {
+        outline: none;
+        border: 1px solid #fff; }
+    .modalWindow.active form button {
+      align-self: center;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      color: #272a31;
+      background: #d3d3d3;
+      height: 50px;
+      padding: 5px 20px;
+      margin-top: 10px;
+      border: 2px solid #ec5242;
+      transition: 0.4s; }
+      .modalWindow.active form button:hover {
+        border: 2px solid #ec524273;
+        background: #ec524273; }
+  .modalWindow.active .modalHero p:nth-child(1) {
     font-family: cocogoose-utra-light;
     font-weight: 100;
     color: #ec5242;
     font-size: 30px; }
-  .modalWindow .modalHero h1 {
+  .modalWindow.active .modalHero h2 {
     background-color: #CA4246;
     background-image: linear-gradient(45deg, #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 16.666%, #E16541 16.666%, #F18F43 50%, #E16541 16.666%, #CA4246 16.666%);
     background-size: 100%;
@@ -329,14 +408,14 @@ footer {
     font-weight: 700;
     color: #ec5242;
     font-size: 20px; }
-  .modalWindow .modalHero p.modalInfo {
+  .modalWindow.active .modalHero p.modalInfo {
     border: 3px solid white;
     padding: 10px; }
-  .modalWindow .modalHero h3 {
+  .modalWindow.active .modalHero h3 {
     margin-top: 14px;
     font-weight: 700;
     font-size: 25px; }
-  .modalWindow .modalHero p:nth-child(3) {
+  .modalWindow.active .modalHero p:nth-child(3) {
     font-weight: 500; }
 
 .about .hero {
@@ -493,6 +572,11 @@ section.see-the-past {
         color: #d3d3d3; }
 
 @media only screen and (max-width: 768px) {
+  .main.active {
+    position: fixed;
+    width: 100%;
+    filter: blur(10px); }
+
   header {
     position: relative; }
     header .top-nav {
@@ -593,6 +677,10 @@ section.see-the-past {
     height: 70vh; }
     section.see-the-past .past-summit-img {
       gap: 5px;
-      flex-direction: column; } }
+      flex-direction: column; }
+
+  .modalWindow.active {
+    width: 70%;
+    transform: translate(-50%, -50%); } }
 
 /*# sourceMappingURL=style.css.map */

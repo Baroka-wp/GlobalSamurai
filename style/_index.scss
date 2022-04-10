@@ -1,3 +1,9 @@
+.main.active {
+  position: fixed;
+  width: 100%;
+  filter: blur(10px);
+}
+
 header {
   .hamburger{
     display: none;
@@ -58,12 +64,6 @@ header {
       }
     }
   }
-}
-
-.main.active {
-  position: fixed;
-  width: 100%;
-  filter: blur(10px);
 }
 
 section.headline {
@@ -340,6 +340,16 @@ footer {
 }
 
 .modalWindow {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.modalWindow.active {
+  transition: 0.4s;
+  visibility: visible;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -355,6 +365,91 @@ footer {
   box-shadow: 3px 4px 5px 0px #ec5242;
   width: 50%;
   padding: 20px;
+  i {
+    cursor: pointer;
+    align-self: flex-end;
+    color: $primary-red;
+    font-size: 20px;
+    &:hover {
+      color: $primary-black;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //gap: 10px;
+    .form-input {
+      display: flex;
+      justify-content: stretch;
+      gap: 10px;
+      .field {
+        width: 50%;
+      }
+      input {
+        font-family: $lato-font;
+        font-size: 14px;
+        height: 52px;
+        margin-bottom: 8px;
+        background: #d3d3d300;
+        border: 1px solid $primary-red;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 8px 16px;
+        width: 100%;
+        &:focus {
+          outline: none;
+          border: 1px solid #fff;
+        }
+      }
+    }
+    .field {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      label {
+        font-family: $cocognose-ultra-light;
+        font-size: 12px;
+        padding: 5px 0;
+      }
+    }
+    textarea {
+      font-family: $lato-font;
+      font-size: 14px;
+      height: 112px;
+      margin-bottom: 8px;
+      background: #d3d3d300;
+      border: 1px solid $primary-red;
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding: 8px 16px;
+      resize: none;
+      width: 100%;
+      &:focus {
+        outline: none;
+        border: 1px solid #fff;
+      }
+    }
+    button {
+      //font-family: $cocognose-ultra-light;
+      align-self: center;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      color: $primary-black;
+      background: $primary-gray;
+      height: 50px;
+      padding: 5px 20px;
+      margin-top: 10px;
+      border: 2px solid $primary-red;
+      transition: 0.4s;
+      &:hover {
+        border: 2px solid #ec524273;
+        background: #ec524273;
+      }
+    }
+  }
   .modalHero {
     p:nth-child(1) {
       font-family: $cocognose-ultra-light;
@@ -362,7 +457,7 @@ footer {
       color: $primary-red;
       font-size: 30px;
     }
-    h1 {
+    h2 {
       background-color: #CA4246;
       background-image: linear-gradient(
          45deg,
