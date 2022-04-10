@@ -29,13 +29,13 @@ navLink.forEach(link => {
   })
 });
 
-async function addSpeaker(image, name, graduate, experience){
+function addSpeaker(image, name, graduate, experience){
   let el = document.createElement("v-card");
   el.speakerName = name,
   el.speakerGraduate = graduate,
   el.speakerExperience = experience,
   el.speakerImage = image,
-  await speakersFeature.append(el);
+  speakersFeature.append(el);
 }
 
 for(const speaker in speakerList){
