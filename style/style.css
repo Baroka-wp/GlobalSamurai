@@ -28,6 +28,11 @@ a {
   a:focus {
     color: #ec5242; }
 
+.main.active {
+  position: fixed;
+  width: 100%;
+  filter: blur(10px); }
+
 header .hamburger {
   display: none; }
 header .top-nav ul {
@@ -185,7 +190,7 @@ section.speakers {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px; }
+  gap: 40px; }
   section.speakers h3 {
     color: #272a31;
     position: relative;
@@ -201,27 +206,25 @@ section.speakers {
     text-align: center; }
   section.speakers .speakers-col {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    width: 70%;
+    width: 90%;
+    margin-bottom: 40px;
     gap: 20px; }
-    section.speakers .speakers-col .speakers-col-1,
-    section.speakers .speakers-col .speakers-col-2 {
-      display: flex;
-      flex-direction: column;
-      gap: 10px; }
+  section.speakers v-card {
+    width: 45%; }
   section.speakers .speaker {
     display: flex;
     justify-content: center;
     align-items: center; }
     section.speakers .speaker .speaker-img-block {
-      width: 30%; }
+      width: 20%; }
     section.speakers .speaker .speaker-img {
       width: 70%;
       min-width: 60px; }
     section.speakers .speaker .speaker-details {
-      padding: 10px; }
+      padding: 5px; }
     section.speakers .speaker .speaker-details h4 {
       font-family: cocogoose-pro, sans-serif;
       font-weight: 600;
@@ -295,6 +298,126 @@ footer {
       footer .footer-content .copyrigth p {
         font-size: 14px; }
 
+.modalWindow {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s; }
+
+.modalWindow.active {
+  transition: 0.4s;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  background-color: #d3d3d3b5;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 3px 4px 5px 0px #ec5242;
+  width: 50%;
+  padding: 20px; }
+  .modalWindow.active i {
+    cursor: pointer;
+    align-self: flex-end;
+    color: #ec5242;
+    font-size: 20px; }
+    .modalWindow.active i:hover {
+      color: #272a31; }
+  .modalWindow.active form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .modalWindow.active form .form-input {
+      display: flex;
+      justify-content: stretch;
+      gap: 10px; }
+      .modalWindow.active form .form-input .field {
+        width: 50%; }
+      .modalWindow.active form .form-input input {
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+        height: 52px;
+        margin-bottom: 8px;
+        background: #d3d3d300;
+        border: 1px solid #ec5242;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 8px 16px;
+        width: 100%; }
+        .modalWindow.active form .form-input input:focus {
+          outline: none;
+          border: 1px solid #fff; }
+    .modalWindow.active form .field {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .modalWindow.active form .field label {
+        font-family: cocogoose-utra-light;
+        font-size: 12px;
+        padding: 5px 0; }
+    .modalWindow.active form textarea {
+      font-family: "Lato", sans-serif;
+      font-size: 14px;
+      height: 112px;
+      margin-bottom: 8px;
+      background: #d3d3d300;
+      border: 1px solid #ec5242;
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding: 8px 16px;
+      resize: none;
+      width: 100%; }
+      .modalWindow.active form textarea:focus {
+        outline: none;
+        border: 1px solid #fff; }
+    .modalWindow.active form button {
+      align-self: center;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      color: #272a31;
+      background: #d3d3d3;
+      height: 50px;
+      padding: 5px 20px;
+      margin-top: 10px;
+      border: 2px solid #ec5242;
+      transition: 0.4s; }
+      .modalWindow.active form button:hover {
+        border: 2px solid #ec524273;
+        background: #ec524273; }
+  .modalWindow.active .modalHero p:nth-child(1) {
+    font-family: cocogoose-utra-light;
+    font-weight: 100;
+    color: #ec5242;
+    font-size: 30px; }
+  .modalWindow.active .modalHero h2 {
+    background-color: #CA4246;
+    background-image: linear-gradient(45deg, #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 16.666%, #E16541 16.666%, #F18F43 50%, #E16541 16.666%, #CA4246 16.666%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: cocogoose-pro, sans-serif;
+    font-weight: 700;
+    color: #ec5242;
+    font-size: 20px; }
+  .modalWindow.active .modalHero p.modalInfo {
+    border: 3px solid white;
+    padding: 10px; }
+  .modalWindow.active .modalHero h3 {
+    margin-top: 14px;
+    font-weight: 700;
+    font-size: 25px; }
+  .modalWindow.active .modalHero p:nth-child(3) {
+    font-weight: 500; }
+
 .about .hero {
   display: flex;
   flex-direction: column;
@@ -320,7 +443,7 @@ footer {
     text-decoration: underline;
     color: #ec5242; }
 .about .hero-info {
-  background-color: white;
+  background-color: #ffffff80;
   width: 50%;
   border: 3px solid #d3d3d3;
   padding: 10px; }
@@ -517,15 +640,20 @@ section.see-the-past {
       flex-direction: column;
       width: 90%; }
       section.program .cards .card {
+        justify-content: space-between;
         flex-direction: row;
         width: 100%;
         height: 60px; }
 
   section.speakers {
-    gap: 25px; }
+    gap: 30px; }
     section.speakers .speakers-col {
       height: auto;
       flex-direction: column; }
+    section.speakers v-card {
+      width: auto; }
+    section.speakers .speaker {
+      width: auto; }
 
   section.partners {
     height: 25vh; }
@@ -549,6 +677,10 @@ section.see-the-past {
     height: 70vh; }
     section.see-the-past .past-summit-img {
       gap: 5px;
-      flex-direction: column; } }
+      flex-direction: column; }
+
+  .modalWindow.active {
+    width: 70%;
+    transform: translate(-50%, -50%); } }
 
 /*# sourceMappingURL=style.css.map */

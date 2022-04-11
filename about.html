@@ -3,42 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GlobalSamurai</title>
+    <title>About > GlobalSamurai</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header>
-      <div class="top-nav">
-        <ul>
-          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a href="#">English</a></li>
-          <li><a href="#">My Page</a></li>
-          <li><a href="#">Logout</a></li>
-        </ul>
-      </div>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <nav class="nav-bar">
-        <div class="logo-text">
-          <p><a href="index.html">Global</a></p>
-          <em><a href="index.html">Samurai</a></em>
-        </div>
-        <ul class="nav-list">
-          <li class="nav-link"><a href="about.html">About</a></li>
-          <li class="nav-link"><a href="#">Program</a></li>
-          <li class="nav-link"><a href="#">Join</a></li>
-          <li class="nav-link"><a href="#">Sponsor</a></li>
-          <li class="nav-link"><a href="#">News</a></li>
-          <li class="nav-link"><a href="#" class="call-action" href="#">CC Compaign</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="headline about">
+    <v-header></v-header>
+    <div class="main">
+      <section class="headline about">
       <div class="bg-img"></div>
       <div class="hero">
         <h1>CREATIVE COMMONS <br> GLOBAL SUMMIT</h1>
@@ -50,8 +22,8 @@
         <p>pover 80 countries is taking place in october, in korea.</p>
         <p><a href="#">live us a message : biroroti@gmail.com</a></p>
       </div>
-   </section>
-   <section class="creative-commons">
+      </section>
+      <section class="creative-commons">
      <div class="creative-commons-container">
        <h3>Creative Commons Global Summit 2015 Logo</h3>
        <p>The logo of CC Global Summit 2015 was decided through the llogo competition from 8. June to 7. July.
@@ -60,7 +32,7 @@
        <img src="images/logo.png" alt="GS logo">
      </div>
    </section>
-   <section class="see-the-past">
+      <section class="see-the-past">
      <div class="see-the-past-container">
        <h3>See the past CC Global Summits</h3>
        <p>Take a look at the last two CC Global Summits which took place in Buenos Aires and in Warsaw</p>
@@ -79,23 +51,10 @@
          </div>
        </div>
      </div>
-   </section>
-    <footer>
-      <div class="footer-content">
-        <div class="footer-credit">
-          <h2>GS</h2>
-          <h3>Global <br> Samurai</h3>
-        </div>
-        <div class="copyrigth">
-          <h4>2015 Creative Commons Korea. Some Rights Reserved.</h4>
-          <br>
-          <p>
-            このサイトでは、SAMURAI School of Engineeringの活動をご紹介しています。ウェブサイトでは、会社の活動内容やアクター、目的などを簡潔に紹介しています。
-            <a href="https://africasamurai.com/">https://africasamurai.com/</a>
-          </p>
-        </div>
-      </div>
-    </footer>
-    <script src="js/script.js"></script>
+     </section>
+     <v-footer></v-footer>
+    </div>
+    <v-modal></v-modal>
+  <script type="module" src="js/script.js"></script>
   </body>
 </html>
