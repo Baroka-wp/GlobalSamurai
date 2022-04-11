@@ -441,7 +441,6 @@ footer {
   align-items: center;
   height: 30vh;
   background-color: $primary-gray;
-
   .footer-content {
     display: flex;
     justify-content: space-around;
@@ -588,11 +587,13 @@ footer {
     left: 50% !important;
     top: 50% !important;
     transform: translate(-50%, -35%) !important;
+<<<<<<< HEAD
 
+=======
+>>>>>>> dddbd3c3f2f1de24010abd58255e9bc47fb1bbf9
     h1 {
       position: relative;
     }
-
     h1::after {
       position: absolute;
       left: 45%;
@@ -624,6 +625,7 @@ footer {
     }
   }
 
+<<<<<<< HEAD
   .aboutfooter footer {
     background-color: $primary-black;
 
@@ -633,6 +635,11 @@ footer {
     h3,
     h4,
     p {
+=======
+  .aboutfooter footer{
+    background-color: $primary-black;
+    h1,h2,h3,h3,h4,p {
+>>>>>>> dddbd3c3f2f1de24010abd58255e9bc47fb1bbf9
       color: $primary-gray;
     }
   }
@@ -954,7 +961,10 @@ section.see-the-past {
       left: auto;
       width: auto;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dddbd3c3f2f1de24010abd58255e9bc47fb1bbf9
     .hero-info {
       width: auto;
     }
