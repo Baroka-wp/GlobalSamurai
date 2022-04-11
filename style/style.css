@@ -1,3 +1,6 @@
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable no-descending-specificity */
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @font-face {
   src: url(../fonts/cocogoose/CocogoosePro-trial.ttf);
@@ -13,7 +16,13 @@ body {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, h4, p, ul, a {
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+a {
   margin: 0;
   padding: 0; }
 
@@ -27,6 +36,97 @@ a {
     color: #ec5242; }
   a:focus {
     color: #ec5242; }
+
+section.program h3 {
+  position: relative;
+  padding-top: 30px; }
+section.program h3::after {
+  position: absolute;
+  left: 30%;
+  bottom: -20px;
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: #ec5242;
+  text-align: center; }
+
+section.speakers h3 {
+  color: #272a31;
+  position: relative;
+  padding-top: 30px; }
+section.speakers h3::after {
+  position: absolute;
+  left: 30%;
+  bottom: -20px;
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: #ec5242;
+  text-align: center; }
+section.speakers .speaker-details h4 {
+  font-family: cocogoose-pro, sans-serif;
+  font-weight: 600;
+  font-size: 14px; }
+section.speakers .speaker-details em {
+  font-size: 12px;
+  color: #ec5242; }
+section.speakers .speaker-details p {
+  font-size: 12px;
+  font-style: italic; }
+
+section.partners h3 {
+  color: #d3d3d3;
+  position: relative; }
+section.partners h3::after {
+  position: absolute;
+  left: 30%;
+  bottom: -20px;
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: #ec5242;
+  text-align: center; }
+
+footer .footer-content h2 {
+  font-family: cocogoose-pro-light, sans-serif;
+  font-weight: 700;
+  font-size: 30px; }
+footer .copyrigth p {
+  font-size: 14px; }
+
+.modalWindow.active i {
+  cursor: pointer;
+  align-self: flex-end;
+  color: #ec5242;
+  font-size: 20px; }
+  .modalWindow.active i:hover {
+    color: #272a31; }
+
+.modalHero p:nth-child(1) {
+  font-family: cocogoose-utra-light, sans-serif;
+  font-weight: 100;
+  color: #ec5242;
+  font-size: 30px; }
+.modalHero h2 {
+  background-color: #ca4246;
+  background-image: linear-gradient(45deg, #ca4246 16.666%, #e16541 16.666%, #e16541 33.333%, #f18f43 16.666%, #e16541 16.666%, #f18f43 50%, #e16541 16.666%, #ca4246 16.666%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: cocogoose-pro, sans-serif;
+  font-weight: 700;
+  color: #ec5242;
+  font-size: 20px; }
+.modalHero p.modalInfo {
+  border: 3px solid white;
+  padding: 10px; }
+.modalHero h3 {
+  margin-top: 14px;
+  font-weight: 700;
+  font-size: 25px; }
+.modalHero p:nth-child(3) {
+  font-weight: 500; }
 
 .main.active {
   position: fixed;
@@ -54,7 +154,7 @@ header {
     align-items: center;
     padding: 15px 0;
     height: 45px;
-    box-shadow: 0px 1px 10px 0px #272a31; }
+    box-shadow: 0 1px 10px 0 #272a31; }
     header .nav-bar .logo-text p {
       font-family: cocogoose-pro, sans-serif;
       font-weight: 700;
@@ -82,7 +182,7 @@ header {
         header .nav-bar ul.nav-list .call-action:hover {
           color: white;
           background-color: #ec5242;
-          transition: .3s; }
+          transition: 0.3s; }
 
 section.headline {
   position: relative;
@@ -101,13 +201,13 @@ section.headline {
     position: absolute;
     left: 60px; }
     section.headline .hero p:nth-child(1) {
-      font-family: cocogoose-utra-light;
+      font-family: cocogoose-utra-light, sans-serif;
       font-weight: 100;
       color: #ec5242;
       font-size: 30px; }
     section.headline .hero h1 {
-      background-color: #CA4246;
       background: url("../images/background.png");
+      background-color: #ca4246;
       background-size: 100%;
       background-repeat: repeat;
       -webkit-background-clip: text;
@@ -141,18 +241,6 @@ section.program {
   background-size: cover;
   color: white;
   gap: 10px; }
-  section.program h3 {
-    position: relative;
-    padding-top: 30px; }
-  section.program h3::after {
-    position: absolute;
-    left: 30%;
-    bottom: -20px;
-    content: "";
-    height: 1px;
-    width: 40px;
-    background-color: #ec5242;
-    text-align: center; }
   section.program .cards {
     cursor: pointer;
     margin-top: 55px;
@@ -196,19 +284,6 @@ section.speakers {
   justify-content: center;
   align-items: center;
   gap: 40px; }
-  section.speakers h3 {
-    color: #272a31;
-    position: relative;
-    padding-top: 30px; }
-  section.speakers h3::after {
-    position: absolute;
-    left: 30%;
-    bottom: -20px;
-    content: "";
-    height: 1px;
-    width: 40px;
-    background-color: #ec5242;
-    text-align: center; }
   section.speakers .speakers-col {
     display: flex;
     flex-wrap: wrap;
@@ -217,7 +292,7 @@ section.speakers {
     width: 90%;
     margin-bottom: 40px;
     gap: 20px; }
-  section.speakers v-card {
+  section.speakers .vCard {
     width: 45%; }
   section.speakers .speaker {
     display: flex;
@@ -230,21 +305,11 @@ section.speakers {
       min-width: 60px; }
     section.speakers .speaker .speaker-details {
       padding: 5px; }
-    section.speakers .speaker .speaker-details h4 {
-      font-family: cocogoose-pro, sans-serif;
-      font-weight: 600;
-      font-size: 14px; }
-    section.speakers .speaker .speaker-details em {
-      font-size: 12px;
-      color: #ec5242; }
     section.speakers .speaker .speaker-details .speaker-separation {
       width: 40px;
       height: 0.8px;
       background-color: #ec5242;
       margin: 7px 0; }
-    section.speakers .speaker .speaker-details p {
-      font-size: 12px;
-      font-style: italic; }
 
 section.partners {
   display: flex;
@@ -255,18 +320,6 @@ section.partners {
   height: 30vh;
   gap: 20px;
   background: #272a31; }
-  section.partners h3 {
-    color: #d3d3d3;
-    position: relative; }
-  section.partners h3::after {
-    position: absolute;
-    left: 30%;
-    bottom: -20px;
-    content: "";
-    height: 1px;
-    width: 40px;
-    background-color: #ec5242;
-    text-align: center; }
   section.partners .partner-logos {
     display: flex;
     justify-content: center;
@@ -294,14 +347,8 @@ footer {
       align-items: center;
       gap: 5px;
       width: 30%; }
-      footer .footer-content .footer-credit h2 {
-        font-family: cocogoose-pro-light, sans-serif;
-        font-weight: 700;
-        font-size: 30px; }
     footer .footer-content .copyrigth {
       width: 70%; }
-      footer .footer-content .copyrigth p {
-        font-size: 14px; }
 
 .modalWindow {
   position: fixed;
@@ -324,16 +371,9 @@ footer {
   background-color: #d3d3d3b5;
   border-top-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  box-shadow: 3px 4px 5px 0px #ec5242;
+  box-shadow: 3px 4px 5px 0 #ec5242;
   width: 50%;
   padding: 20px; }
-  .modalWindow.active i {
-    cursor: pointer;
-    align-self: flex-end;
-    color: #ec5242;
-    font-size: 20px; }
-    .modalWindow.active i:hover {
-      color: #272a31; }
   .modalWindow.active form {
     display: flex;
     flex-direction: column;
@@ -363,7 +403,7 @@ footer {
       flex-direction: column;
       justify-content: center; }
       .modalWindow.active form .field label {
-        font-family: cocogoose-utra-light;
+        font-family: cocogoose-utra-light, sans-serif;
         font-size: 12px;
         padding: 5px 0; }
     .modalWindow.active form textarea {
@@ -397,31 +437,6 @@ footer {
       .modalWindow.active form button:hover {
         border: 2px solid #ec524273;
         background: #ec524273; }
-  .modalWindow.active .modalHero p:nth-child(1) {
-    font-family: cocogoose-utra-light;
-    font-weight: 100;
-    color: #ec5242;
-    font-size: 30px; }
-  .modalWindow.active .modalHero h2 {
-    background-color: #CA4246;
-    background-image: linear-gradient(45deg, #CA4246 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 16.666%, #E16541 16.666%, #F18F43 50%, #E16541 16.666%, #CA4246 16.666%);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: cocogoose-pro, sans-serif;
-    font-weight: 700;
-    color: #ec5242;
-    font-size: 20px; }
-  .modalWindow.active .modalHero p.modalInfo {
-    border: 3px solid white;
-    padding: 10px; }
-  .modalWindow.active .modalHero h3 {
-    margin-top: 14px;
-    font-weight: 700;
-    font-size: 25px; }
-  .modalWindow.active .modalHero p:nth-child(3) {
-    font-weight: 500; }
 
 .about .hero {
   display: flex;
@@ -571,7 +586,7 @@ section.see-the-past {
         color: #d3d3d3;
         padding-bottom: 20px; }
       section.see-the-past .past-summit-img .last-summit p {
-        font-family: cocogoose-utra-light;
+        font-family: cocogoose-utra-light, sans-serif;
         font-weight: 600;
         font-size: 14px;
         color: #d3d3d3; }
@@ -659,7 +674,7 @@ section.see-the-past {
     section.speakers .speakers-col {
       height: auto;
       flex-direction: column; }
-    section.speakers v-card {
+    section.speakers .vCard {
       width: auto; }
     section.speakers .speaker {
       width: auto; }

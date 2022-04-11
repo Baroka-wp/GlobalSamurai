@@ -1,9 +1,10 @@
 export default class Modal extends HTMLElement {
-  constructor(){
+  constructor() {
     super();
+    this.modal = '';
   }
 
-  connectedCallback(){
+  connectedCallback() {
     this.render();
   }
 

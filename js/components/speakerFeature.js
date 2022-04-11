@@ -2,14 +2,16 @@ export default class Vcard extends HTMLElement {
   constructor() {
     super();
 
-    this.speakerImage = "";
-    this.speakerName = "";
-    this.speakerGraduate = "";
-    this.speakerExperience = "";
+    this.speakerImage = '';
+    this.speakerName = '';
+    this.speakerGraduate = '';
+    this.speakerExperience = '';
   }
+
   connectedCallback() {
     this.render();
   }
+
   render() {
     this.innerHTML = `
     <div class="speaker">

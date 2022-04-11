@@ -1,10 +1,13 @@
 export default class Header extends HTMLElement {
   constructor() {
     super();
+    this.header = '';
   }
+
   connectedCallback() {
     this.render();
   }
+
   render() {
     this.innerHTML = `
       <header>
