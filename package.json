@@ -1,33 +1,8 @@
 {
-  "name": "html-css-projet-template",
+  "name": "globalsamurai",
   "version": "1.0.0",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Baroka-wp/html-css-projet-template.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Baroka-wp/html-css-projet-template/issues"
-  },
-  "homepage": "https://github.com/Baroka-wp/html-css-projet-template#readme",
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.26.0",
-    "hint": "^6.1.11",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
-  },
   "dependencies": {
     "abab": "^2.0.5",
     "abbrev": "^1.1.1",
@@ -66,6 +41,7 @@
     "bail": "^1.0.5",
     "balanced-match": "^1.0.2",
     "base64-js": "^1.5.1",
+    "bcp47": "^1.1.2",
     "bcrypt-pbkdf": "^1.0.2",
     "binary-extensions": "^2.2.0",
     "bl": "^4.1.0",
@@ -107,6 +83,7 @@
     "cloudinary-core": "^2.12.3",
     "color-convert": "^2.0.1",
     "color-name": "^1.1.4",
+    "color-string": "^1.9.0",
     "color-support": "^1.1.3",
     "combined-stream": "^1.0.8",
     "compress-brotli": "^1.3.6",
@@ -273,6 +250,7 @@
     "ip": "^1.1.5",
     "is-alphabetical": "^1.0.4",
     "is-alphanumerical": "^1.0.4",
+    "is-arrayish": "^0.3.2",
     "is-bigint": "^1.0.4",
     "is-binary-path": "^2.1.0",
     "is-boolean-object": "^1.1.2",
@@ -443,9 +421,12 @@
     "pkg-dir": "^4.2.0",
     "postcss": "^8.4.12",
     "postcss-html": "^0.36.0",
+    "postcss-less": "^5.0.0",
     "postcss-media-query-parser": "^0.2.3",
     "postcss-resolve-nested-selector": "^0.1.1",
     "postcss-safe-parser": "^6.0.0",
+    "postcss-sass": "^0.5.0",
+    "postcss-scss": "^4.0.3",
     "postcss-selector-parser": "^6.0.9",
     "postcss-syntax": "^0.36.2",
     "postcss-value-parser": "^4.2.0",
@@ -507,6 +488,7 @@
     "signal-exit": "^3.0.7",
     "simple-concat": "^1.0.1",
     "simple-get": "^3.1.1",
+    "simple-swizzle": "^0.2.2",
     "slash": "^3.0.0",
     "slice-ansi": "^4.0.0",
     "smart-buffer": "^4.2.0",
@@ -558,11 +540,13 @@
     "trough": "^1.0.5",
     "tsconfig-paths": "^3.14.1",
     "tslib": "^2.3.1",
+    "tsutils": "^3.21.0",
     "tunnel-agent": "^0.6.0",
     "tweetnacl": "^0.14.5",
     "type-check": "^0.4.0",
     "type-fest": "^0.20.2",
     "typedarray-to-buffer": "^3.1.5",
+    "typescript": "^4.6.3",
     "unbox-primitive": "^1.0.1",
     "unbzip2-stream": "^1.4.3",
     "unified": "^9.2.2",
@@ -611,5 +595,30 @@
     "yargs-parser": "^20.2.9",
     "yauzl": "^2.10.0",
     "zwitch": "^1.0.5"
-  }
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "hint": "^6.1.11",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baroka-wp/GlobalSamurai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baroka-wp/GlobalSamurai/issues"
+  },
+  "homepage": "https://github.com/Baroka-wp/GlobalSamurai#readme"
 }
