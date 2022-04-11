@@ -17,7 +17,7 @@
 
 ## Live
 
-[Go Live](#)
+[Go Live](https://baroka-wp.github.io/GlobalSamurai/)
 
 ## Authors
 
