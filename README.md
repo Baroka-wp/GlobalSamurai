@@ -15,6 +15,10 @@
 - Linter
 - Figma
 
+## Mookup
+![free-showcasing-header-mockup](https://user-images.githubusercontent.com/67879818/162725435-7c6c9bc3-ca51-47ca-a837-7713cea7efb4.jpeg)
+
+
 ## Live
 
 [Go Live](#)
@@ -29,15 +33,10 @@
 
 👥 **Co Author : MOSEKA Jamila**
 
-- GitHub: [jmoseka](https://github.com/jmoseka)
-- Twitter: [@milamoseka](https://twitter.com/mila-moseka)
-- LinkedIn: [jamila-moseka](https://www.linkedin.com/in/jamila-moseka/)
 
-### Setup
+## Install
 
-### Install
-
-### Run tests
+### Run Linters tests
 To track linter errors locally follow these steps:  
 
 Download all the dependencies run:
@@ -56,7 +55,7 @@ Track JavaScript linter errors run:
 ```
 npx eslint ."
 ```
-## Run local server
+### Run local server
 [Node live server](#)is easy to install and use:
 - Install globally via npm
 ```
