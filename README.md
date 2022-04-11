@@ -7,6 +7,9 @@
 
 > This website presents the activities of the SAMURAI engineering school. The website briefly presents the activities of the company, its actors and its objectives.
 
+## LOOM VIDEO PRESENTING
+[Watch the presentation of the projet on Loom](https://www.loom.com/share/8192505451464455933ade2f5c80a177)
+
 ## Built With
 
 - Html
@@ -17,7 +20,6 @@
 
 ## Mookup
 ![free-showcasing-header-mockup](https://user-images.githubusercontent.com/67879818/162725435-7c6c9bc3-ca51-47ca-a837-7713cea7efb4.jpeg)
-
 
 ## Live
 
