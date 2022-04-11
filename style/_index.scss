@@ -5,6 +5,9 @@
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
   .hamburger{
     display: none;
   }
@@ -56,6 +59,7 @@ header {
         color: $primary-red;
         padding: 10px;
         border: 4px solid $primary-red;
+        cursor: pointer;
         &:hover {
           color: white;
           background-color: $primary-red;
@@ -91,16 +95,7 @@ section.headline {
     }
     h1 {
       background-color: #CA4246;
-      background-image: linear-gradient(
-         45deg,
-         #CA4246 16.666%,
-         #E16541 16.666%,
-         #E16541 33.333%,
-         #F18F43 16.666%,
-         #E16541 16.666%,
-         #F18F43 50%,
-         #E16541 16.666%,
-         #CA4246 16.666%);
+      background: url("../images/background.png");
        background-size: 100%;
        background-repeat: repeat;
        -webkit-background-clip: text;

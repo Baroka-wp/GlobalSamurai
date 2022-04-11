@@ -10,8 +10,8 @@ export default class Header extends HTMLElement {
       <header>
         <div class="top-nav">
           <ul>
-            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://web.facebook.com/baroka.irotori.52/"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://linkedin.com/in/baroka"><i class="fa-brands fa-twitter"></i></a></li>
             <li><a href="#">English</a></li>
             <li><a href="#">My Page</a></li>
             <li><a href="#">Logout</a></li>

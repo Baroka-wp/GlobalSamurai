@@ -14,7 +14,7 @@ export default class Footer extends HTMLElement {
             <h3>Global <br> Samurai</h3>
           </div>
           <div class="copyrigth">
-            <h4>2015 Creative Commons Korea. Some Rights Reserved.</h4>
+            <h4>2022 Africa Samurai LLC. Some Rights Reserved.</h4>
             <br>
             <p>
               このサイトでは、SAMURAI School of Engineeringの活動をご紹介しています。ウェブサイトでは、会社の活動内容やアクター、目的などを簡潔に紹介しています。
