@@ -441,12 +441,11 @@ footer {
   align-items: center;
   height: 30vh;
   background-color: $primary-gray;
-
   .footer-content {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 60%;
+    width: 70%;
 
     .footer-credit {
       display: flex;
@@ -585,12 +584,12 @@ footer {
     text-align: center;
     width: 100%;
     gap: 30px;
-    transform: translate(-8%, 15%) !important;
-
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -35%) !important;
     h1 {
       position: relative;
     }
-
     h1::after {
       position: absolute;
       left: 45%;
@@ -619,6 +618,13 @@ footer {
       font-family: $lato-font !important;
       color: $primary-black !important;
       font-size: 14px !important;
+    }
+  }
+
+  .aboutfooter footer{
+    background-color: $primary-black;
+    h1,h2,h3,h3,h4,p {
+      color: $primary-gray;
     }
   }
 }
@@ -936,11 +942,11 @@ section.see-the-past {
 
   .about {
     .hero {
-      left: 0;
-
-      h1 {
-        //font-size: 40px !important;
-      }
+      left: auto;
+      width: auto;
+    }
+    .hero-info {
+      width: auto;
     }
   }
 
