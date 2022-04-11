@@ -2,8 +2,6 @@
 import speakerList from './model/speakersList.js';
 // get Html element
 const speakersFeature = document.querySelector('.speakers-col');
-
-// function to add speaker
 const addSpeaker = async (image, name, graduate, experience) => {
   const el = document.createElement('v-card');
   el.classList.add('vCard');
